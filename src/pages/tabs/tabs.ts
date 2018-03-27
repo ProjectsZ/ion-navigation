@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import { Pagina1Page, Ficha1Page, Ajuste1Page } from '../index.page';

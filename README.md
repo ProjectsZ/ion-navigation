@@ -4,6 +4,8 @@
 
 * Sistema de Tabs
 
+* Modals
+
 # Contact
 More contributions and suggestions in the theme to:
 

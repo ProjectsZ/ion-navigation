@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ModalController } from 'ionic-angular';
+import { NavController, NavParams, ModalController,
+                MenuController } from 'ionic-angular';
 
 import { ModalPage } from '../index.page';
 
@@ -10,7 +11,8 @@ import { ModalPage } from '../index.page';
 export class Ficha1Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-                        private modalCtrl : ModalController) {
+                        private modalCtrl : ModalController,
+                        private menuCtrl: MenuController ) {
   }
 
   /* Mostrar modal */
@@ -31,6 +33,10 @@ export class Ficha1Page {
                                           }else{ console.log("Se cerro el modal, sin datas ..."); }
 
                                                           } ) /* Cuando se cierra optener los ... */
+  }
+
+  viewMenu(){
+    this.menuCtrl.toggle();
   }
 
 }

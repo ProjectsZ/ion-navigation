@@ -9,8 +9,10 @@ import { MyApp } from './app.component';
 import {
                 Pagina1Page, Pagina2Page, Pagina3Page,
                 TabsPage,
-                Ficha1Page, ModalPage,
-                Ajuste1Page
+                Ficha1Page,
+                ModalPage,
+                Ajuste1Page,
+                MenuPage
               } from '../pages/index.page';
 
 
@@ -23,11 +25,15 @@ import {
     TabsPage,
     Ficha1Page,
     Ajuste1Page,
-    ModalPage
+    ModalPage,
+    MenuPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    // IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+                                                              backButtonText: 'retroceso' /* Texto del back */
+                                                            })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -38,7 +44,8 @@ import {
     TabsPage,
     Ficha1Page,
     Ajuste1Page,
-    ModalPage
+    ModalPage,
+    MenuPage
   ],
   providers: [
     StatusBar,
@@ -47,4 +54,3 @@ import {
   ]
 })
 export class AppModule {}
- 
