@@ -6,7 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 
-import { Pagina1Page, Pagina2Page, Pagina3Page
+import {
+                Pagina1Page, Pagina2Page, Pagina3Page,
                 TabsPage,
                 Ficha1Page,
                 Ajuste1Page } from '../pages/index.page';
