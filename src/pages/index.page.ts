@@ -8,4 +8,6 @@ export { TabsPage } from './tabs/tabs';
 export { Ficha1Page } from './ficha1/ficha1';
 
 export { Ajuste1Page } from './ajuste1/ajuste1';
+
+export { ModalPage } from './modal/modal';
  

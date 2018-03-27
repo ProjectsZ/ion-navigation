@@ -9,8 +9,9 @@ import { MyApp } from './app.component';
 import {
                 Pagina1Page, Pagina2Page, Pagina3Page,
                 TabsPage,
-                Ficha1Page,
-                Ajuste1Page } from '../pages/index.page';
+                Ficha1Page, ModalPage,
+                Ajuste1Page
+              } from '../pages/index.page';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {
     Pagina3Page,
     TabsPage,
     Ficha1Page,
-    Ajuste1Page
+    Ajuste1Page,
+    ModalPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import {
     Pagina3Page,
     TabsPage,
     Ficha1Page,
-    Ajuste1Page
+    Ajuste1Page,
+    ModalPage
   ],
   providers: [
     StatusBar,
@@ -44,3 +47,4 @@ import {
   ]
 })
 export class AppModule {}
+ 
