@@ -1,0 +1,28 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>pagina2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <h3> Enviando con eventos </h3>
+  <ion-list>
+    <ion-item *ngFor="let data of dataset; let i = index"
+              (click)="nextPagina3( data )"> {{ data.name }} </ion-item>
+  </ion-list>
+
+  <h3> Enviando con HTML </h3>
+  <ion-list>
+    <ion-item *ngFor="let data of dataset; let i = index"
+        [navPush]="pagina3"
+        [navParams]="{ 'data' : data }"> {{ data.name }} </ion-item>
+          <!-- 'data' es la llave y data es el objeto-->
+  </ion-list>
+
+</ion-content>
+ 
